@@ -22,5 +22,10 @@ namespace Laba1FD
         {
 
         }
+
+        private void btAvtor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
