@@ -53,6 +53,7 @@
             this.btOkomp.TabIndex = 1;
             this.btOkomp.Text = "О компании";
             this.btOkomp.UseVisualStyleBackColor = true;
+            this.btOkomp.Click += new System.EventHandler(this.btOkomp_Click);
             // 
             // pictureBox1
             // 

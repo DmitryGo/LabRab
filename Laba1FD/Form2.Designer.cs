@@ -34,6 +34,7 @@
             this.tbName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btVhod
@@ -44,6 +45,7 @@
             this.btVhod.TabIndex = 0;
             this.btVhod.Text = "Вход";
             this.btVhod.UseVisualStyleBackColor = true;
+            this.btVhod.Click += new System.EventHandler(this.btVhod_Click);
             // 
             // btReg
             // 
@@ -53,6 +55,7 @@
             this.btReg.TabIndex = 1;
             this.btReg.Text = "Регистрация";
             this.btReg.UseVisualStyleBackColor = true;
+            this.btReg.Click += new System.EventHandler(this.btReg_Click);
             // 
             // tbPas
             // 
@@ -86,11 +89,22 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Пароль:";
             // 
+            // btBack
+            // 
+            this.btBack.Location = new System.Drawing.Point(198, 164);
+            this.btBack.Name = "btBack";
+            this.btBack.Size = new System.Drawing.Size(75, 23);
+            this.btBack.TabIndex = 6;
+            this.btBack.Text = "Назад";
+            this.btBack.UseVisualStyleBackColor = true;
+            this.btBack.Click += new System.EventHandler(this.btBack_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 170);
+            this.ClientSize = new System.Drawing.Size(285, 193);
+            this.Controls.Add(this.btBack);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbName);
@@ -112,5 +126,6 @@
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btBack;
     }
 }

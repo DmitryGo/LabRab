@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace Laba1FD
 {
-    public partial class Form2 : Form
+    public partial class Razrabotchik : Form
     {
-        public Form2()
+        public Razrabotchik()
         {
             InitializeComponent();
         }
 
-        private void btVhod_Click(object sender, EventArgs e)
+        private void btSpisZak_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btReg_Click(object sender, EventArgs e)
+        private void btSvKlient_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btKorPrice_Click(object sender, EventArgs e)
         {
 
         }

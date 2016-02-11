@@ -27,5 +27,10 @@ namespace Laba1FD
         {
 
         }
+
+        private void btOkomp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

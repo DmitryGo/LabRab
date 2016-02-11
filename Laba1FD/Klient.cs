@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace Laba1FD
 {
-    public partial class Form2 : Form
+    public partial class Klient : Form
     {
-        public Form2()
+        public Klient()
         {
             InitializeComponent();
         }
 
-        private void btVhod_Click(object sender, EventArgs e)
+        private void btTZ_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btReg_Click(object sender, EventArgs e)
+        private void btPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSviz_Click(object sender, EventArgs e)
         {
 
         }

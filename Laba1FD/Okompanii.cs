@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Laba1FD
 {
-    public partial class Form2 : Form
+    public partial class Okompanii : Form
     {
-        public Form2()
+        public Okompanii()
         {
             InitializeComponent();
-        }
-
-        private void btVhod_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btReg_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btBack_Click(object sender, EventArgs e)
