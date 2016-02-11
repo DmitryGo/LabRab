@@ -16,5 +16,10 @@ namespace Laba1FD
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
