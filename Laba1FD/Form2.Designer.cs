@@ -32,6 +32,8 @@
             this.btReg = new System.Windows.Forms.Button();
             this.tbPas = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btVhod
@@ -54,29 +56,49 @@
             // 
             // tbPas
             // 
-            this.tbPas.Location = new System.Drawing.Point(109, 38);
+            this.tbPas.Location = new System.Drawing.Point(63, 32);
             this.tbPas.Name = "tbPas";
-            this.tbPas.Size = new System.Drawing.Size(164, 20);
+            this.tbPas.Size = new System.Drawing.Size(210, 20);
             this.tbPas.TabIndex = 2;
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(109, 12);
+            this.tbName.Location = new System.Drawing.Point(63, 6);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(164, 20);
+            this.tbName.Size = new System.Drawing.Size(210, 20);
             this.tbName.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Имя:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Пароль:";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(285, 170);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbPas);
             this.Controls.Add(this.btReg);
             this.Controls.Add(this.btVhod);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,5 +110,7 @@
         private System.Windows.Forms.Button btReg;
         private System.Windows.Forms.TextBox tbPas;
         private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

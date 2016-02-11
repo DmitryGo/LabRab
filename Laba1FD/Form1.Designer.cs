@@ -34,18 +34,18 @@
             // 
             // btAvtor
             // 
-            this.btAvtor.Location = new System.Drawing.Point(12, 93);
+            this.btAvtor.Location = new System.Drawing.Point(12, 12);
             this.btAvtor.Name = "btAvtor";
-            this.btAvtor.Size = new System.Drawing.Size(129, 40);
+            this.btAvtor.Size = new System.Drawing.Size(248, 40);
             this.btAvtor.TabIndex = 0;
             this.btAvtor.Text = "Авторизация";
             this.btAvtor.UseVisualStyleBackColor = true;
             // 
             // btOkomp
             // 
-            this.btOkomp.Location = new System.Drawing.Point(12, 139);
+            this.btOkomp.Location = new System.Drawing.Point(5, 58);
             this.btOkomp.Name = "btOkomp";
-            this.btOkomp.Size = new System.Drawing.Size(129, 42);
+            this.btOkomp.Size = new System.Drawing.Size(248, 42);
             this.btOkomp.TabIndex = 1;
             this.btOkomp.Text = "О компании";
             this.btOkomp.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 300);
+            this.ClientSize = new System.Drawing.Size(265, 300);
             this.Controls.Add(this.btOkomp);
             this.Controls.Add(this.btAvtor);
             this.Name = "Form1";
