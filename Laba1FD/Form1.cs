@@ -10,24 +10,21 @@ using System.Windows.Forms;
 
 namespace Laba1FD
 {
+    //Класс главное страницы ПС
     public partial class Form1 : Form
     {
+        //Конструктор
         public Form1()
         {
             InitializeComponent();
         }
 
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //Метод для перехода на форму авторизации
         private void btAvtor_Click(object sender, EventArgs e)
         {
 
         }
-
+        //Метод для перехода на форму о компании
         private void btOkomp_Click(object sender, EventArgs e)
         {
 

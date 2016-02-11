@@ -10,23 +10,30 @@ using System.Windows.Forms;
 
 namespace Laba1FD
 {
+    //класс авторизации
     public partial class Form2 : Form
     {
+        string name;//имя 
+        string pass;//пароль
+
+        BazDan bd = new BazDan();//объект класса БД
+
+        //конструктор
         public Form2()
         {
             InitializeComponent();
         }
-
+        //метод входа
         private void btVhod_Click(object sender, EventArgs e)
         {
 
         }
-
+        //метод регистрации нового пользователя
         private void btReg_Click(object sender, EventArgs e)
         {
 
         }
-
+        //метода возврата на главную форму
         private void btBack_Click(object sender, EventArgs e)
         {
 
