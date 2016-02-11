@@ -46,6 +46,11 @@ namespace Laba1FD
         //Метод проверки наличия введеного логина и пароля в бд
         public string ProverkaBD() { return "0"; }
 
+        //Метод для отправки сообщения
+        public string OtpravSoobsh() { return "0"; }
+
+        //Метод для получения сообщения
+        public string PoluchSoobsh() { return "0"; }
 
 
 
