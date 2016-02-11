@@ -65,6 +65,12 @@
     <Compile Include="Klient.Designer.cs">
       <DependentUpon>Klient.cs</DependentUpon>
     </Compile>
+    <Compile Include="messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messages.Designer.cs">
+      <DependentUpon>messages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Okompanii.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Klient.resx">
       <DependentUpon>Klient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messages.resx">
+      <DependentUpon>messages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Okompanii.resx">
       <DependentUpon>Okompanii.cs</DependentUpon>
