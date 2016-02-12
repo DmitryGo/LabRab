@@ -53,8 +53,5 @@ namespace Laba1FD
         public string PoluchSoobsh() { return "0"; }
 
 
-        //тест
-        public string test() { return "0"; }
-
     }
 }
