@@ -33,6 +33,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btBack = new System.Windows.Forms.Button();
+            this.lbUrAd = new System.Windows.Forms.Label();
+            this.lbIOD = new System.Windows.Forms.Label();
+            this.lbKon = new System.Windows.Forms.Label();
+            this.lbIOP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +51,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 42);
+            this.label2.Location = new System.Drawing.Point(0, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 13);
             this.label2.TabIndex = 1;
@@ -56,7 +60,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, 84);
+            this.label3.Location = new System.Drawing.Point(0, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 2;
@@ -65,7 +69,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 127);
+            this.label4.Location = new System.Drawing.Point(0, 214);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 13);
             this.label4.TabIndex = 3;
@@ -73,7 +77,7 @@
             // 
             // btBack
             // 
-            this.btBack.Location = new System.Drawing.Point(340, 158);
+            this.btBack.Location = new System.Drawing.Point(429, 264);
             this.btBack.Name = "btBack";
             this.btBack.Size = new System.Drawing.Size(75, 23);
             this.btBack.TabIndex = 4;
@@ -81,11 +85,47 @@
             this.btBack.UseVisualStyleBackColor = true;
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
             // 
+            // lbUrAd
+            // 
+            this.lbUrAd.AutoSize = true;
+            this.lbUrAd.Location = new System.Drawing.Point(170, 78);
+            this.lbUrAd.Name = "lbUrAd";
+            this.lbUrAd.Size = new System.Drawing.Size(0, 13);
+            this.lbUrAd.TabIndex = 5;
+            // 
+            // lbIOD
+            // 
+            this.lbIOD.AutoSize = true;
+            this.lbIOD.Location = new System.Drawing.Point(170, 0);
+            this.lbIOD.Name = "lbIOD";
+            this.lbIOD.Size = new System.Drawing.Size(0, 13);
+            this.lbIOD.TabIndex = 6;
+            // 
+            // lbKon
+            // 
+            this.lbKon.AutoSize = true;
+            this.lbKon.Location = new System.Drawing.Point(170, 142);
+            this.lbKon.Name = "lbKon";
+            this.lbKon.Size = new System.Drawing.Size(0, 13);
+            this.lbKon.TabIndex = 7;
+            // 
+            // lbIOP
+            // 
+            this.lbIOP.AutoSize = true;
+            this.lbIOP.Location = new System.Drawing.Point(170, 214);
+            this.lbIOP.Name = "lbIOP";
+            this.lbIOP.Size = new System.Drawing.Size(0, 13);
+            this.lbIOP.TabIndex = 8;
+            // 
             // Okompanii
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 193);
+            this.ClientSize = new System.Drawing.Size(516, 302);
+            this.Controls.Add(this.lbIOP);
+            this.Controls.Add(this.lbKon);
+            this.Controls.Add(this.lbIOD);
+            this.Controls.Add(this.lbUrAd);
             this.Controls.Add(this.btBack);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -107,5 +147,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.Label lbUrAd;
+        private System.Windows.Forms.Label lbIOD;
+        private System.Windows.Forms.Label lbKon;
+        private System.Windows.Forms.Label lbIOP;
     }
 }
