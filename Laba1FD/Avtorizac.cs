@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace Laba1FD
 {
     //класс авторизации
-    public partial class Form2 : Form
+    public partial class Avtorizac : Form
     {
         string name;//имя 
         string pass;//пароль
@@ -19,7 +19,7 @@ namespace Laba1FD
         BazDan bd = new BazDan();//объект класса БД
 
         //конструктор
-        public Form2()
+        public Avtorizac()
         {
             InitializeComponent();
         }

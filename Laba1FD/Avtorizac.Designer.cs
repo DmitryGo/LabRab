@@ -1,6 +1,6 @@
 ﻿namespace Laba1FD
 {
-    partial class Form2
+    partial class Avtorizac
     {
         /// <summary>
         /// Required designer variable.

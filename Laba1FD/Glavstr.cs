@@ -11,10 +11,10 @@ using System.Windows.Forms;
 namespace Laba1FD
 {
     //Класс главное страницы ПС
-    public partial class Form1 : Form
+    public partial class Glavstr : Form
     {
         //Конструктор
-        public Form1()
+        public Glavstr()
         {
             InitializeComponent();
         }

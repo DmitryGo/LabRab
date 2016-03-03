@@ -12,6 +12,7 @@ namespace Laba1FD
 {
     public partial class messages : Form
     {
+        //конструктор
         public messages()
         {
             InitializeComponent();
