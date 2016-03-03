@@ -30,12 +30,20 @@ namespace Laba1FD
         //Метод возвращающий пользователя к главной форме
         private void btBack_Click(object sender, EventArgs e)
         {
+            Glavstr glavstr = new Glavstr();
+            glavstr.Visible = true;
+            this.Hide();
 
         }
 
         private void Okompanii_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Okompanii_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

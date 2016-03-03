@@ -94,6 +94,7 @@
             this.Name = "Okompanii";
             this.Text = "О компании";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Okompanii_FormClosing);
+            this.Load += new System.EventHandler(this.Okompanii_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
