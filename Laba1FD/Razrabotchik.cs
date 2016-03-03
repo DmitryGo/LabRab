@@ -40,7 +40,7 @@ namespace Laba1FD
         {
             Avtorizac avtorizac = new Avtorizac();
             avtorizac.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void Razrabotchik_FormClosing(object sender, FormClosingEventArgs e)
