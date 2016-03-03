@@ -28,7 +28,9 @@ namespace Laba1FD
         //метод для общения клиента и разработчика
         private void btSvKlient_Click(object sender, EventArgs e)
         {
-
+            messages mes = new messages();
+            mes.Show();
+            this.Hide();
         }
         //метод открытия формы редактирования прайс-листа
         private void btKorPrice_Click(object sender, EventArgs e)

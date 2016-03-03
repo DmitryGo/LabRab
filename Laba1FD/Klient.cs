@@ -26,12 +26,16 @@ namespace Laba1FD
         //метод для перехода на форму прайс листа
         private void btPrice_Click(object sender, EventArgs e)
         {
-
+            Pricelist mes = new Pricelist();
+            mes.Show();
+            this.Hide();
         }
         //метод обеспечивающий общение заказчика и разработчика
         private void btSviz_Click(object sender, EventArgs e)
         {
-
+            messages mes = new messages();
+            mes.Show();
+            this.Hide();
         }
         //возврат к форме авторизации
         private void btBack_Click(object sender, EventArgs e)
