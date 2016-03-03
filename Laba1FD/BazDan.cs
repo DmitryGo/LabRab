@@ -121,7 +121,7 @@ namespace Laba1FD
 
         public void RegistrNewPol(string name, string pass)
         {
-            zapros = "INSERT INTO users (id,prav,name,pass) VALUES (NULL,'0',"+name+","+pass+")";
+            zapros = "INSERT INTO users (id,prav,name,pass) VALUES (NULL,'0','"+name+"','"+pass+"')";
             ConnectBDInsert(zapros);
         }
 
