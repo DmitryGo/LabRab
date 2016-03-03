@@ -57,6 +57,7 @@
             this.bt1.TabIndex = 2;
             this.bt1.Text = "Назад";
             this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
             // SpisZak
             // 

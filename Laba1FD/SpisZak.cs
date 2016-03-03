@@ -21,5 +21,12 @@ namespace Laba1FD
         {
             Application.Exit();
         }
+
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            Razrabotchik razrabotckik = new Razrabotchik();
+            razrabotckik.Show();
+            this.Hide();
+        }
     }
 }

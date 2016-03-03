@@ -410,6 +410,7 @@
             this.bt2.TabIndex = 39;
             this.bt2.Text = "Назад";
             this.bt2.UseVisualStyleBackColor = true;
+            this.bt2.Click += new System.EventHandler(this.bt2_Click);
             // 
             // TehZad
             // 

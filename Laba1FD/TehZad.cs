@@ -28,5 +28,12 @@ namespace Laba1FD
         {
             Application.Exit();
         }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+            Klient klient = new Klient();
+            klient.Show();
+            this.Hide();
+        }
     }
 }
