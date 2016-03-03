@@ -39,6 +39,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(411, 464);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // bt1
             // 
@@ -48,6 +49,7 @@
             this.bt1.TabIndex = 1;
             this.bt1.Text = "Назад";
             this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
             // Pricelist
             // 

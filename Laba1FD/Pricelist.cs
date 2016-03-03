@@ -22,5 +22,15 @@ namespace Laba1FD
         {
             Application.Exit();
         }
+        //Текстбокс для вывода прайс-листа
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Кнопка назад
+        private void bt1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
