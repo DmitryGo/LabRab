@@ -3,35 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 
 
 namespace Laba1FD
 {   //Класс для осуществелния связи с бд, содержащий методы для работы с бд
     class BazDan
     {
-        //Поля
-        string CommandText = "Наш SQL скрипт";
-        string Connect = "Database=labupp;Data Source=db4free.net;User Id=dmitrygo;Password=331150";
-        //Переменная Connect - это строка подключения в которой:
-        //БАЗА - Имя базы в MySQL
-        //ХОСТ - Имя или IP-адрес сервера (если локально то можно и localhost)
-        //ПОЛЬЗОВАТЕЛЬ - Имя пользователя MySQL
-        //ПАРОЛЬ - говорит само за себя - пароль пользователя БД MySQL
+        String zapros;
 
-
-            
-        //конструктор
-      /*  public BazDan()
+        public BazDan()
         {
+        
+
+        }
+        public void ConnectBD(String zapros)
+        {
+            string Connect = "Server=127.0.0.1;Port=3306;Database=labupp;User Id=dmitrygo;Password=331150";
+
+            string CommandText = zapros;
             MySqlConnection myConnection = new MySqlConnection(Connect);
             MySqlCommand myCommand = new MySqlCommand(CommandText, myConnection);
-            myConnection.Open(); //Устанавливаем соединение с базой данных.
+            try
+            {
+                myConnection.Open();
+            }
+            catch
+            {
+                
+            }
+        }
 
-        }*/
+
 
         //Метод добавления элемента в бд
-        public void AddBD() { }
+        public void AddBD() {
+            String zapros = "INSERT INTO ";
+            ConnectBD(zapros);
+
+        }
 
         //Метод удаления элемента из бд
         public void DellBD() { }
@@ -43,7 +53,11 @@ namespace Laba1FD
         public string ShowPrice() { return "0"; }
 
         //Метод вывода адреса из бд
-        public string ShowUrAdress() { return "0"; }
+        public string ShowUrAdress() {
+            String zapros = "SELECT  ";
+            ConnectBD(zapros);
+            return "0";
+        }
 
         //Метод вывода о компании из бд
         public string ShowOKompanii() { return "0"; }
