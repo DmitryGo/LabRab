@@ -47,6 +47,9 @@ namespace Laba1FD
         //метод регистрации нового пользователя
         private void btReg_Click(object sender, EventArgs e)
         {
+            string name = tbName.Text;
+            string pass = tbPas.Text;
+            bd.RegistrNewPol(name,pass);
             MessageBox.Show("Зарегестрирован");
         }
         //метода возврата на главную форму

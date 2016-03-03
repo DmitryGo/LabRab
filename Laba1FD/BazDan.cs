@@ -20,6 +20,7 @@ namespace Laba1FD
         
 
         }
+        //Коннект для возврата из бд
         public string ConnectBD(string zapros)
         {
             
@@ -39,9 +40,26 @@ namespace Laba1FD
                     return result.ToString();
                 } 
             else return "Таблица пуста!";
-            }
-        
+         }
 
+        //Коннект для добавления
+        public void ConnectBDInsert(string zapros)
+        {
+
+            string CommandText = zapros;
+            MySqlConnection myConnection = new MySqlConnection(Connect);
+            try
+            {
+                myConnection.Open();
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+            MySqlCommand myCommand = new MySqlCommand(CommandText, myConnection);
+            myCommand.ExecuteNonQuery();
+            
+        }
         //Метод добавления элемента в бд
         public void AddBD() {
             
@@ -101,6 +119,11 @@ namespace Laba1FD
         //Метод для получения сообщения
         public string PoluchSoobsh() { return "0"; }
 
+        public void RegistrNewPol(string name, string pass)
+        {
+            zapros = "INSERT INTO users (id,prav,name,pass) VALUES (NULL,'0',"+name+","+pass+")";
+            ConnectBDInsert(zapros);
+        }
 
         //тест
         public void exittBD()
