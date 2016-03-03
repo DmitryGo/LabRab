@@ -31,13 +31,13 @@ namespace Laba1FD
             {
                 Razrabotchik razrabotchic = new Razrabotchik();
                 razrabotchic.Show();
-                this.Close(); 
+                this.Hide();
             }
             else if (tbName.Text == "0")
             {
                 Klient klient = new Klient();
                 klient.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {
