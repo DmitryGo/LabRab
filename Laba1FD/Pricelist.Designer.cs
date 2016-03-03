@@ -28,20 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bt1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 9);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(411, 464);
+            this.textBox1.TabIndex = 0;
+            // 
+            // bt1
+            // 
+            this.bt1.Location = new System.Drawing.Point(265, 479);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(138, 34);
+            this.bt1.TabIndex = 1;
+            this.bt1.Text = "Назад";
+            this.bt1.UseVisualStyleBackColor = true;
             // 
             // Pricelist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 515);
+            this.Controls.Add(this.bt1);
+            this.Controls.Add(this.textBox1);
             this.Name = "Pricelist";
             this.Text = "Pricelist";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pricelist_FormClosing);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button bt1;
     }
 }
