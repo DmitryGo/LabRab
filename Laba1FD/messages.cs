@@ -16,6 +16,7 @@ namespace Laba1FD
         //конструктор
         public messages()
         {
+            
             InitializeComponent();
         }
         //Метод отправки сообщения
@@ -26,8 +27,10 @@ namespace Laba1FD
         //Метод для выхода из чата
         private void btBack_Click(object sender, EventArgs e)
         {
+            Razrabotchik raz = new Razrabotchik();
+            Klient kl = new Klient();
 
-        }
+         }
 
         private void messages_FormClosing(object sender, FormClosingEventArgs e)
         {
