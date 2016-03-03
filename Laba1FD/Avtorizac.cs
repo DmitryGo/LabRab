@@ -36,7 +36,7 @@ namespace Laba1FD
         //метода возврата на главную форму
         private void btBack_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

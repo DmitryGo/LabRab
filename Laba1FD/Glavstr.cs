@@ -13,20 +13,29 @@ namespace Laba1FD
     //Класс главное страницы ПС
     public partial class Glavstr : Form
     {
+        
         //Конструктор
         public Glavstr()
         {
             InitializeComponent();
+            
         }
 
         //Метод для перехода на форму авторизации
         private void btAvtor_Click(object sender, EventArgs e)
         {
+            Avtorizac avtorizac = new Avtorizac();
+            avtorizac.Show();
+            this.Hide();
+            
 
         }
         //Метод для перехода на форму о компании
         private void btOkomp_Click(object sender, EventArgs e)
         {
+            Okompanii okompanii = new Okompanii();
+            okompanii.Show();
+            this.Hide();
 
         }
     }
