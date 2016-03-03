@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 
 
 namespace Laba1FD
@@ -22,13 +22,13 @@ namespace Laba1FD
 
             
         //конструктор
-        public BazDan()
+      /*  public BazDan()
         {
             MySqlConnection myConnection = new MySqlConnection(Connect);
             MySqlCommand myCommand = new MySqlCommand(CommandText, myConnection);
             myConnection.Open(); //Устанавливаем соединение с базой данных.
 
-        }
+        }*/
 
         //Метод добавления элемента в бд
         public void AddBD() { }
