@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Laba1FD
 {
+    //Класс для технического задания
     public partial class TehZad : Form
     {
+        //Конструктор
         public TehZad()
         {
             InitializeComponent();
@@ -23,12 +25,12 @@ namespace Laba1FD
         {
 
         }
-
+        //Метод для закрытия формы
         private void TehZad_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
+        //Кнопка назад
         private void bt2_Click(object sender, EventArgs e)
         {
             Klient klient = new Klient();
