@@ -33,6 +33,9 @@ namespace Laba1FD
 
         }
 
-        
+        private void Okompanii_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -85,6 +85,7 @@
             this.Controls.Add(this.btTZ);
             this.Name = "Klient";
             this.Text = "Клиент";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Klient_FormClosing);
             this.ResumeLayout(false);
 
         }

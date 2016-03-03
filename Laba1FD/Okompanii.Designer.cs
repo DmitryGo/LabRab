@@ -93,6 +93,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Okompanii";
             this.Text = "О компании";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Okompanii_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

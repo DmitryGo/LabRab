@@ -16,5 +16,10 @@ namespace Laba1FD
         {
             InitializeComponent();
         }
+
+        private void Pricelist_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

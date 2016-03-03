@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(426, 515);
             this.Name = "Pricelist";
             this.Text = "Pricelist";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pricelist_FormClosing);
             this.ResumeLayout(false);
 
         }

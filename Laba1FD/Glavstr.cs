@@ -26,8 +26,9 @@ namespace Laba1FD
         {
             Avtorizac avtorizac = new Avtorizac();
             avtorizac.Show();
-            this.Hide();
-            
+            this.Visible = false;
+
+
 
         }
         //Метод для перехода на форму о компании
@@ -35,8 +36,13 @@ namespace Laba1FD
         {
             Okompanii okompanii = new Okompanii();
             okompanii.Show();
-            this.Hide();
+            this.Visible = false;
 
+        }
+
+        private void Glavstr_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

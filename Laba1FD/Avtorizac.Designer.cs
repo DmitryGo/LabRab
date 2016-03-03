@@ -99,7 +99,7 @@
             this.btBack.UseVisualStyleBackColor = true;
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
             // 
-            // Form2
+            // Avtorizac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,8 +111,9 @@
             this.Controls.Add(this.tbPas);
             this.Controls.Add(this.btReg);
             this.Controls.Add(this.btVhod);
-            this.Name = "Form2";
+            this.Name = "Avtorizac";
             this.Text = "Авторизация";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Avtorizac_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

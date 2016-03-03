@@ -80,6 +80,7 @@
             this.Controls.Add(this.lbChat);
             this.Name = "messages";
             this.Text = "Чат";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.messages_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

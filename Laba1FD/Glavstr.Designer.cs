@@ -65,7 +65,7 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Glavstr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,8 +73,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btOkomp);
             this.Controls.Add(this.btAvtor);
-            this.Name = "Form1";
+            this.Name = "Glavstr";
             this.Text = "Chapa";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Glavstr_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

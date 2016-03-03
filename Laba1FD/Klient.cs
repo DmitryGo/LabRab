@@ -36,7 +36,14 @@ namespace Laba1FD
         //возврат к форме авторизации
         private void btBack_Click(object sender, EventArgs e)
         {
+            Avtorizac avtorizac = new Avtorizac();
+            avtorizac.Show();
+            this.Close();
+        }
 
+        private void Klient_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

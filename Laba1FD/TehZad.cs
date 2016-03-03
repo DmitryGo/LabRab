@@ -23,5 +23,10 @@ namespace Laba1FD
         {
 
         }
+
+        private void TehZad_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

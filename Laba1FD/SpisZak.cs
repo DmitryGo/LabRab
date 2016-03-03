@@ -16,5 +16,10 @@ namespace Laba1FD
         {
             InitializeComponent();
         }
+
+        private void SpisZak_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

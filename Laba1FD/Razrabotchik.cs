@@ -21,7 +21,9 @@ namespace Laba1FD
         //метод перехода на форму с заказами
         private void btSpisZak_Click(object sender, EventArgs e)
         {
-
+            SpisZak spiszak = new SpisZak();
+            spiszak.Show();
+            this.Hide();
         }
         //метод для общения клиента и разработчика
         private void btSvKlient_Click(object sender, EventArgs e)
@@ -36,7 +38,14 @@ namespace Laba1FD
         //метод выовзращающий к форме авторизации
         private void btBack_Click(object sender, EventArgs e)
         {
+            Avtorizac avtorizac = new Avtorizac();
+            avtorizac.Show();
+            this.Close();
+        }
 
+        private void Razrabotchik_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

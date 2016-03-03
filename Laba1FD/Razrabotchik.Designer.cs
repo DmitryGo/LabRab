@@ -85,6 +85,7 @@
             this.Controls.Add(this.btBack);
             this.Name = "Razrabotchik";
             this.Text = "Разработчик";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Razrabotchik_FormClosing);
             this.ResumeLayout(false);
 
         }
