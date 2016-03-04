@@ -23,7 +23,7 @@ namespace Laba1FD
         //Коннект для возврата из бд
         public string ConnectBD(string zapros)
         {
-            
+
             string CommandText = zapros;
             MySqlConnection myConnection = new MySqlConnection(Connect);
             try {
@@ -33,14 +33,19 @@ namespace Laba1FD
             {
                 return "Ошибка соединения!";
             }
+
                 MySqlCommand myCommand = new MySqlCommand(CommandText, myConnection);
+
                 object result = myCommand.ExecuteScalar();
+
                 if (result != null)
                 {
                     return result.ToString();
-                } 
-            else return "Таблица пуста!";
-         }
+                }
+                else return "Таблица пуста!";
+            }
+
+            
 
         //Коннект для добавления
         public void ConnectBDInsert(string zapros)
@@ -110,19 +115,44 @@ namespace Laba1FD
         //Метод добавления нового заказчика
         public string AddZakaz() { return "0"; }
 
-        //Метод проверки наличия введеного логина и пароля в бд
-        public string ProverkaBD() { return "0"; }
+
 
         //Метод для отправки сообщения
-        public string OtpravSoobsh() { return "0"; }
+        public string OtpravSoobsh()
+        {
+            return "0";
+        }
 
         //Метод для получения сообщения
         public string PoluchSoobsh() { return "0"; }
 
+        //Метод проверки наличия введеного логина в бд
+        public string ProverkaBD(string name)
+        {
+            string zapros = "SELECT name FROM users WHERE name = '" + name + "' ";
+            string s = ConnectBD(zapros);
+            return s;
+        }
+
+        //Метод проверки наличия прав администратора
+        public string ProverkaAdmin(string name, string pass)
+        {
+            string zapros = "SELECT name FROM users WHERE prav = '1',name='"+name+"','pass='"+pass+"'";
+            string s = ConnectBD(zapros);
+            return s;
+        }
+        //Метод проверки наличия прав клиента
+        public string ProverkaKlient(string name, string pass)
+        {
+            string zapros = "SELECT name FROM users WHERE prav = '0',name='" + name + "','pass='" + pass + "'";
+            string s = ConnectBD(zapros);
+            return s;
+        }
+
         public void RegistrNewPol(string name, string pass)
         {
-            zapros = "INSERT INTO users (id,prav,name,pass) VALUES (NULL,'0','"+name+"','"+pass+"')";
-            ConnectBDInsert(zapros);
+                zapros = "INSERT INTO users (id,prav,name,pass) VALUES (NULL,'0','" + name + "','" + pass + "')";
+                ConnectBDInsert(zapros);
         }
 
         //тест

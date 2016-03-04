@@ -27,30 +27,57 @@ namespace Laba1FD
         //метод входа
         private void btVhod_Click(object sender, EventArgs e)
         {
-            if(tbName.Text == "1")
+            string name = tbName.Text;
+            string pass = tbPas.Text;
+            if (name != "" && pass != "")
             {
-                Razrabotchik razrabotchic = new Razrabotchik();
-                razrabotchic.Show();
-                this.Hide();
-            }
-            else if (tbName.Text == "0")
-            {
-                Klient klient = new Klient();
-                klient.Show();
-                this.Hide();
+                string nameprov = bd.ProverkaAdmin(name, pass);
+                string nameprov2 = bd.ProverkaKlient(name, pass);
+                if (nameprov==name)
+                {
+                    Razrabotchik razrabotchic = new Razrabotchik();
+                    razrabotchic.Show();
+                    this.Hide();
+                }
+                else if(nameprov2==name)
+                {
+                    Klient klient = new Klient();
+                    klient.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Пользователя не существует или не верный пароль");
+                }
             }
             else
             {
                 MessageBox.Show("Введите имя и пароль");
             }
+            
         }
         //метод регистрации нового пользователя
         private void btReg_Click(object sender, EventArgs e)
         {
             string name = tbName.Text;
             string pass = tbPas.Text;
-            bd.RegistrNewPol(name,pass);
-            MessageBox.Show("Зарегестрирован");
+            if (name != "" && pass != "")
+            {
+                string nameprov = bd.ProverkaBD(name);
+                if (nameprov != name)
+                {
+                    bd.RegistrNewPol(name, pass);
+                    MessageBox.Show("Зарегестрирован");
+                }
+                else
+                {
+                    MessageBox.Show("Данный пользователь уже зарегестрирован");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите имя и пароль");
+            }
         }
         //метода возврата на главную форму
         private void btBack_Click(object sender, EventArgs e)
